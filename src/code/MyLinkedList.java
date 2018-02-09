@@ -1,19 +1,18 @@
 
 
 public class MyLinkedList<E> {
-    // 结点内部类
+    
     private class Node {
         private Object data;                  //data
         private Node next = null;          //Reference to the next node
 
-        public Node() {                         //无参数构造函数为了创建头结点服务
+        public Node() {                        
             data = null;
         }
 
-        public Node(E data) {                //带数据的构造函数
+        public Node(E data) {           
             this.data = data;
         }
-
     }
 
     private Node head;               // Head reference (pointer)
@@ -27,7 +26,7 @@ public class MyLinkedList<E> {
         length = 0;
     }
     /**
-     * 判断是否为空
+     * Determine whether or not it is empty
      * 
      */
     public boolean isEmpty() {
@@ -35,7 +34,7 @@ public class MyLinkedList<E> {
         else return false;
     }
     /**
-     * 从尾部插入链表
+     * Inserting a chain from the tail
      * 
      */
     public void add(E elem) {
