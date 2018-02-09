@@ -6,7 +6,7 @@ public class MyLink {
         private float coef;
         //Exponents of polynomials
         private int expn;
-        //指向下级节点
+        //Point to lower node
         public Node next = null;
         public Node(float coef, int expn){
             this.coef = coef;
